@@ -1,0 +1,55 @@
+@charset "UTF_8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    
+    font-family: "Work Sans",Arial, Helvetica, sans-serif;
+    /*
+    medidas Absolutas
+    cm, mm, in, px, pt, pc
+    centímetro, milímetro, polegada, pixel, ponto, paica
+
+
+    Medidas Relativas
+    em, ex, rem, vw, vh, %
+    tamanho atual da fonte. tamanho da altura x da fonte, fonte que está configurada no body
+    */
+
+    /*
+    16px geralmente = 1em
+    rem: r é do root
+
+    font-size: 1em; 
+    font-weight: bolder;
+    
+    também pode ser variação de números
+    lighter normal bold bolder
+    
+    font-style: italic;
+    text-decoration: underline;
+    */
+
+    background-color: gray;
+}
+
+h1{
+    /*
+    font-family: "Work Sans", sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+    
+    Shorthand font
+    
+    - font-style -> font-weight -> font-family
+
+    */
+
+    font: italic bolder 3em 'Work Sans', sans-serif;
+}
+
+
+h2{
+    font: normal 3em "Work Sans";
+}
