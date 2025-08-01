@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body{
-            height: 100vh;
+            /* height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat;
-            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: cover; */
             /* cover cobre mas corta, contain adiciona barras mantendo o tamanho, 100% 100% distorce a imagem */
+            /* background-attachment: fixed; */
+            /* fixa a imagem no fundo, padrão é scroll */
+
+            /* Shorthand - bakground
+            color > image > position > repeat > [size] > attachment
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            /* Apesar da documentação deixar explicito que o size funciona na shorthand, ele não funciona (size retirado e colocado abaixo) */
+            background-size: cover;
         }
 
         main{
             background-color: lightgrey;
-            width: 400px;
+            max-width: 600px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;
         }
     </style>
-    <title>Document</title>
+    <title>Fundo Fixo de tela</title>
 </head>
 <body>
     <main>
