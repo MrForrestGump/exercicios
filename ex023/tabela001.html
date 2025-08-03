@@ -11,6 +11,7 @@
 
         table{
             width: 400px;
+            height: 400px;
             /* o padrão da border é separate */
             border-collapse: collapse;
             border: 3px solid red;
@@ -19,11 +20,14 @@
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: center;/*alinhamento horizontal*/
+            vertical-align: middle; /*padrão é middle (bottom,top)*/
         }
 
-        tr.linha{
-            background-color: lightgray;
+        .numero{
+            text-align: right;
         }
+
     </style>
     <title>Tabelas</title>
 </head>
@@ -37,7 +41,7 @@
             td table data = dado de tabela (coluna)
     -->
     <table>
-        <tr class="linha"> <!--primeira linha-->
+        <tr> <!--primeira linha-->
             <td>A1</td>
             <td>B1</td>
             <td>C1</td>
@@ -46,13 +50,13 @@
         <tr> <!--segunda linha-->
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
 
-        <tr class="linha"> <!--Terceira linha-->
+        <tr> <!--Terceira linha-->
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
 
         <tr> <!--Quarta linha-->
