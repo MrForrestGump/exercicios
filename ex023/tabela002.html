@@ -10,7 +10,7 @@
         }
 
         table{
-            width: 300px;
+            width: 400px;
             border-collapse: collapse;
         }
 
@@ -27,6 +27,13 @@
         .num{
             text-align: right;   
         }
+
+        caption{
+            font-size: 1.5em;  
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(156, 156, 156);
+        }
     </style>
     <title>Uso de tabelas grandes</title>
 </head>
@@ -35,6 +42,7 @@
     <!--
         Anatomia para tabelas grandes
         table
+            caption
             thead
                  tr, td, th
             tbody
@@ -44,10 +52,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead> <!--Cabeça-->
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -102,7 +111,7 @@
         </tbody>
         <tfoot>
              <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>172.617.055</strong></td>
             </tr>
         </tfoot>
